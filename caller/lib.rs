@@ -51,11 +51,10 @@ mod caller {
             let to = self.callee_contract_address; 
             let params = build_call::<Environment>()
                 .callee(to)
-                .gas_limit(50000)
                 .exec_input(
                     ExecutionInput::new(selector)
                 )
-                .returns::<ReturnType<Result<(), Error>>>();
+                .returns::<ReturnType<()>>();
 
             match params.fire() {
                 Ok(v) => {

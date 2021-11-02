@@ -1,3 +1,8 @@
+> **Solved**: *CalleeTrapped* was caused by *OutOfGas*
+> 
+> receipt: inspect the callstack to dig into the *trap_reason*
+> e.g. by looking for *ExtrinsicFailed* inside block data
+
 # Ink! CalleeTrapped issue demo
 I've stuck in getting `CalleeTrapped` error and created this repo for the issue reproduction.  
 
